@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.12.7 create --template minimal --types jsdoc --add prettier eslint vitest="usages:component,unit" playwright tailwindcss="plugins:typography,forms" sveltekit-adapter="adapter:auto" devtools-json drizzle="database:sqlite+sqlite:better-sqlite3" better-auth="demo:password" mdsvex paraglide="languageTags:en, es+demo:yes" storybook mcp="ide:vscode,claude-code,gemini+setup:local" --no-install myapp
+npx sv@0.12.7 create --template minimal --types jsdoc --add prettier eslint --install npm .
 ```
 
 ## Developing
