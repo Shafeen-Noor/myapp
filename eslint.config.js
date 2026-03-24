@@ -19,13 +19,8 @@ export default defineConfig(
 		},
 
 		{
-			files: ['**/*.svelte', '**/*.svelte.js', '**/*.svelte.ts'],
-			languageOptions: {
-				parserOptions: {
-					svelteConfig,
-					parser: '@typescript-eslint/parser'
-				}
-			}
+			files: ['**/*.svelte', '**/*.svelte.js'],
+			languageOptions: { parserOptions: { svelteConfig } }
 		}
 	],
 	prettier,
