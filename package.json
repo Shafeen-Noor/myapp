@@ -11,7 +11,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write .",
+		"format": "prettier --write --experimental-cli src/",
+		"format:check": "prettier --check --experimental-cli src/",
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
