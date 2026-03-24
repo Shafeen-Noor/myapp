@@ -9,7 +9,8 @@ export default defineConfig({
 	],
 	test: {
 		environment: 'jsdom',
-		globals: true
+		globals: true,
+		setupFiles: ['./tests/setup.js']
 	},
 	resolve: {
 		conditions: ['browser']
