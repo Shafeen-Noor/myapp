@@ -13,7 +13,7 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write --experimental-cli src/",
 		"format:check": "prettier --check --experimental-cli src/",
-		"test:unit": "vitest",
+		"test": "vitest",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"e2e": "npx playwright"
