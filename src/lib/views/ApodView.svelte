@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fetchAPOD } from '../api/Apod';
+	import { fetchAPOD } from '$lib/api/Apod.js';
 	import ApodHeader from '../components/Apod/ApodHeader.svelte';
 	import ApodDatePicker from '../components/Apod/ApodDatePicker.svelte';
 	import ApodCard from '../components/Apod/ApodCard.svelte';

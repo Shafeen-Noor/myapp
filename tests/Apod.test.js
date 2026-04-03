@@ -2,18 +2,18 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/svelte';
 import { vi, describe, it, beforeEach, expect } from 'vitest';
 
 // ─── Mocks ───────────────────────────────────────────────────
-vi.mock('../src/lib/api/Apod.js', () => ({
+vi.mock('$lib/api/Apod.js', () => ({
 	fetchAPOD: vi.fn()
 }));
-import { fetchAPOD } from '../src/lib/api/Apod.js';
+import { fetchAPOD } from '$lib/api/Apod.js';
 
 // ─── Components ──────────────────────────────────────────────
-import ApodHeader from '../src/lib/components/Apod/ApodHeader.svelte';
-import ApodVisual from '../src/lib/components/Apod/ApodVisual.svelte';
-import ApodDatePicker from '../src/lib/components/Apod/ApodDatePicker.svelte';
-import ApodImage from '../src/lib/components/Apod/ApodImage.svelte';
-import ApodCard from '../src/lib/components/Apod/ApodCard.svelte';
-import ApodView from '../src/lib/views/ApodView.svelte';
+import ApodHeader from '$lib/components/Apod/ApodHeader.svelte';
+import ApodVisual from '$lib/components/Apod/ApodVisual.svelte';
+import ApodDatePicker from '$lib/components/Apod/ApodDatePicker.svelte';
+import ApodImage from '$lib/components/Apod/ApodImage.svelte';
+import ApodCard from '$lib/components/Apod/ApodCard.svelte';
+import ApodView from '$lib/views/ApodView.svelte';
 
 // ─── Fixtures ────────────────────────────────────────────────
 const mockApod = {
